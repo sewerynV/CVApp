@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/company_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <RelativeLayout
+        android:id="@+id/experience_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/company_icon"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/textBig"
+            tools:text="eSky.pl" />
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/textRegular"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/company_name"
+            tools:text="Android Developer" />
+
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/position"
+            android:textSize="@dimen/textDetail"
+            tools:text="02.2019" />
+
+        <TextView
+            android:id="@+id/date_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/position"
+            android:layout_toEndOf="@id/start_date"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/textDetail"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/position"
+            android:layout_toEndOf="@id/date_separator"
+            android:textSize="@dimen/textDetail"
+            tools:text="02.2019" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/experience_info_container"
+        android:textSize="@dimen/textSmall"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+
+</RelativeLayout>

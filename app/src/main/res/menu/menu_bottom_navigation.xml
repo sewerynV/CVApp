@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_basics"
+        android:enabled="true"
+        android:icon="@drawable/ic_basics"
+        android:title="@string/bottom_menu_basics"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_skills"
+        android:enabled="true"
+        android:icon="@drawable/ic_skills"
+        android:title="@string/bottom_menu_skills"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_experience"
+        android:enabled="true"
+        android:icon="@drawable/ic_experience"
+        android:title="@string/bottom_menu_experience"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_education"
+        android:enabled="true"
+        android:icon="@drawable/ic_education"
+        android:title="@string/bottom_menu_education"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/school_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/school_icon"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:id="@+id/school_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/textBig"
+            tools:text="University of Silesia" />
+
+        <TextView
+            android:id="@+id/degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/textRegular"
+            android:layout_below="@id/school_name"
+            android:textColor="@color/colorPrimary"
+            tools:text="Bachelor of Engineering" />
+
+        <TextView
+            android:id="@+id/study_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textRegular"
+            android:layout_below="@id/degree"
+            android:textColor="@color/colorPrimary"
+            tools:text="Computer Science" />
+
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/study_field"
+            android:textSize="@dimen/textDetail"
+            tools:text="02.2019" />
+
+        <TextView
+            android:id="@+id/date_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/study_field"
+            android:layout_toEndOf="@id/start_date"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/textDetail"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/study_field"
+            android:layout_toEndOf="@id/date_separator"
+            android:textSize="@dimen/textDetail"
+            tools:text="02.2019" />
+    </RelativeLayout>
+
+</RelativeLayout>

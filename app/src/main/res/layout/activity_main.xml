@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation_view" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bottom_navigation" />
+
+    <com.seweryn.cvapp.ui.view.ErrorView
+        android:id="@+id/initialization_error_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.seweryn.cvapp.ui.view.ProgressView
+        android:id="@+id/initialization_progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:progress_message="@string/progress_preparing_cv_message"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/secondary_progress"
+        layout="@layout/progress_horizontal"
+        android:visibility="gone" />
+
+</RelativeLayout>
